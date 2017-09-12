@@ -1,0 +1,171 @@
+//if (die && attack && reloading) = false
+if die   = false
+if attack = false
+if reloading = false
+
+{
+if press = false
+    {
+    face = 1;
+///////////////////////////////////////
+if (place_free(x+3,y+0))
+    {
+            press = true;
+            rite  = true;
+            
+                if global.wc =0
+                    {hspeed = 2.7; sprite_index = StartOut_Pistol_Move_rite; image_index = -1;image_speed = 1; }
+                    
+                if global.wc =1
+                    {hspeed = 3.08;sprite_index = solty_move_r; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =2
+                    {hspeed = 2.5; sprite_index = Greasett_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =3
+                    {hspeed = 2.6; sprite_index = Uzi_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =4
+                    {hspeed = 3.2; sprite_index = _22_Peppy_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =5
+                    {hspeed = 2.8; sprite_index = _22_Leetal_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =6
+                    {hspeed = 2.9; sprite_index = _22_Winchester_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =7
+                    {hspeed = 2.6; sprite_index = _357_Revolver_Move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =8
+                    {hspeed = 2.5; sprite_index = _357_Winchester_Move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =9
+                    {hspeed = 3.1; sprite_index = _9mm_Speedet_Move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =10
+                    {hspeed = 2.7; sprite_index = _20g_Singlet_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =11
+                    {hspeed = 2.3; sprite_index = _20g_Levery_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =12
+                    {hspeed = 2.1; sprite_index = _16g_Pumpett_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =13
+                    {hspeed = 2.2; sprite_index = _7_5_Ak_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =14
+                    {hspeed = 2.4; sprite_index = _38_Pshutal_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =15
+                    {hspeed = 2.4; sprite_index = _38_froshto_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =16
+                    {hspeed = 2.5; sprite_index = _357_Aku_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =17
+                    {hspeed = 3.3; sprite_index = _32_Pachlalet_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =18
+                    {hspeed = 3;   sprite_index = _32_Pachub_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =19
+                    {hspeed = 2.0; sprite_index = _38_Trispat_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =20
+                    {hspeed = 1.8; sprite_index = _7_5_Rpl_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =21
+                    {hspeed = 2.7; sprite_index = _5_5_Markin_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =22
+                    {hspeed = 2.5; sprite_index = _9mm_Mp5_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =23
+                    {hspeed = 2.6; sprite_index = _9mm_Odrel_12_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =24
+                    {hspeed = 2.2; sprite_index = Luger_Move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =25
+                    {hspeed = 2.7; sprite_index = _5_5_Disili_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =26
+                    {hspeed = 2.9; sprite_index = Skorpion_Move_Rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =27
+                    {hspeed = 2;   sprite_index = _32_welroid_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =28
+                    {hspeed = 1.6; sprite_index = Matil_move_rite; image_index = -1; image_speed = 1; }
+                    
+                if global.wc =29
+                    {hspeed = 2; sprite_index = M16_Move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =30
+                    {hspeed = 2.0; sprite_index = M16A2_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =31
+                    {hspeed = 2.5; sprite_index = Matilad_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =32
+                    {hspeed = 3.2; sprite_index = betatom_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =33
+                    {hspeed = 1.7; sprite_index = doublett_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =34
+                    {hspeed = 2.5; sprite_index = fourrelon_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =35
+                    {hspeed = 2.0; sprite_index = _22_SpamemBullit_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =36
+                    {hspeed = 2.6; sprite_index = Hecker_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =37
+                    {hspeed = 2.6; sprite_index = _22_ImpStart_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =38
+                    {hspeed = 2.4; sprite_index = evans_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =39
+                    {hspeed = 2.5; sprite_index = _22_welroid_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =40
+                    {hspeed = 2.3; sprite_index = _32_p90_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =41
+                    {hspeed = 2.1; sprite_index = _12_7_ChainChain_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =42
+                    {hspeed = 2.1; sprite_index = L8a_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =43
+                    {hspeed = 2.3; sprite_index = _22_rusti_move_rite; image_index = -1; image_speed = 1; }
+                
+                if global.wc =44
+                    {hspeed = 2.0; sprite_index = _20g_Sege_move_rite;  image_index = -1; image_speed = 1; }
+                
+                if global.wc =45
+                    {hspeed = 2.0; sprite_index = _20g_Sege_move_rite;  image_index = -1; image_speed = 1; }
+                
+                if global.wc =46
+                    {hspeed = 1.8; sprite_index = _9mm_Old_Skor_move_rite; image_index = -1; image_speed = 1; }
+                     placebo_hspeed = hspeed;
+        }
+
+////////////////////////////////////////////////////////
+    }
+            if press = true
+            {
+                if !(place_free(x+3,y+0))
+                {
+                    x = (x-3); // Update: So now if it's collided w/ solid OBJ on right side
+                    // it'll now JUMP to the left by 1 pixels and in theory,
+                    // player should never keep stuck, remain its hspeed but have its sprite 'vibrate',
+                    // let's hope it works
+                }
+            }
+}

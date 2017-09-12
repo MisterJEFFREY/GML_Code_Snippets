@@ -1,0 +1,45 @@
+
+if  (die = false) // to make sure player's moving in either direction and not dead
+    {           // 60 = 1/sec, 30 = 2/ sec, 15 = 4/sec, 10 = 6/sec
+        alarm[4] = 10; //nvrm, it's now 4/second // TESTING, now it's 6 times/ second 
+        
+        if face = 1 // player moving rite
+        if (hspeed > 0.001)
+        if (place_free(x+4,x+0))
+        if (press = true)
+        {
+            //Remember, exhaust dust goes on the left
+            if global.player_is_large = false
+                {
+                    instance_create(x-5,y+5,uni_exhaust_dust_rite_obj); // creates one far away
+                    instance_create(x-0,y+5,uni_exhaust_dust_rite_obj); // creates one a little closer
+                    instance_create(x+5,y+5,uni_exhaust_dust_rite_obj); // creates one a little closer
+                }
+            if global.player_is_large = true
+                {
+                    instance_create(x-19,y+5,uni_exhaust_dust_rite_obj);
+                }
+        }
+
+        if face = 2 // player moving left
+        if (hspeed < 0.001)
+        if (place_free(x-4,x+0))
+        if (press = true)
+        {
+            //Remember, exhaust dust goes on the right
+            if global.player_is_large = false
+                {
+                    instance_create(x+5,y+5,uni_exhaust_dust_left_obj);
+                    instance_create(x+0,y+5,uni_exhaust_dust_left_obj);
+                    instance_create(x-5,y+5,uni_exhaust_dust_left_obj);
+                }
+            if global.player_is_large = true
+                {
+                    instance_create(x+19,y+5,uni_exhaust_dust_left_obj);                
+                }
+        }
+     // every two seconds
+    //  I'm aware that this won't be perfect, because exhaust dust may appear 
+    // "randomly" if this alarm checks through even if the player's not moving L/R every 2 seconds.
+    }
+        

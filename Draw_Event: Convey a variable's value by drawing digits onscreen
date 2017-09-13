@@ -1,0 +1,303 @@
+//draw_sprite(gen_1,0,x+view_xview,y+view_yview);
+
+if parts_size_draw < 10000 
+    {
+    draw_sprite(gen_0,0,view_xview+257,view_yview+10);
+    };
+if parts_size_draw < 1000
+    {
+    draw_sprite(gen_0,0,view_xview+263,view_yview+10);
+    };
+if parts_size_draw < 100
+    {
+    draw_sprite(gen_0,0,view_xview+269,view_yview+10);
+    };
+if parts_size_draw < 10
+    {
+    draw_sprite(gen_0,0,view_xview+275,view_yview+10);
+    };
+if parts_size_draw = 0
+    {
+    draw_sprite(gen_0,0,view_xview+275,view_yview+10);
+    };
+
+//lazy code here
+{
+if parts_size_draw = 9000
+    draw_sprite(gen_0,0,view_xview+269,view_yview+10);
+if parts_size_draw = 8000
+    draw_sprite(gen_0,0,view_xview+269,view_yview+10);
+if parts_size_draw = 7000
+    draw_sprite(gen_0,0,view_xview+269,view_yview+10);
+if parts_size_draw = 6000
+    draw_sprite(gen_0,0,view_xview+269,view_yview+10);
+if parts_size_draw = 5000
+    draw_sprite(gen_0,0,view_xview+269,view_yview+10);
+if parts_size_draw = 4000
+    draw_sprite(gen_0,0,view_xview+269,view_yview+10);
+if parts_size_draw = 3000
+    draw_sprite(gen_0,0,view_xview+269,view_yview+10);
+if parts_size_draw = 2000
+    draw_sprite(gen_0,0,view_xview+269,view_yview+10);
+if parts_size_draw = 1000
+    draw_sprite(gen_0,0,view_xview+269,view_yview+10);
+}
+///end lazy code
+    
+//if there's 5th digit
+if parts_size_draw > 89999                           ///if 9
+    {
+    draw_sprite(gen_9,0,view_xview+257,view_yview+10);
+    parts_size_draw-=90000;
+    };
+if parts_size_draw > 79999 && parts_size_draw < 90000  //if 8
+    {
+    draw_sprite(gen_8,0,view_xview+257,view_yview+10);
+    parts_size_draw-=80000;
+    };
+if parts_size_draw > 69999 && parts_size_draw < 80000  //if 7
+    {
+    draw_sprite(gen_7,0,view_xview+257,view_yview+10);
+    parts_size_draw-=70000;
+    };
+if parts_size_draw > 59999 && parts_size_draw < 70000  //if 6
+    {
+    draw_sprite(gen_6,0,view_xview+257,view_yview+10);
+    parts_size_draw-=60000;
+    };
+if parts_size_draw > 49999 && parts_size_draw < 60000  //if 5
+    {
+    draw_sprite(gen_5,0,view_xview+257,view_yview+10);
+    parts_size_draw-=50000;
+    };
+if parts_size_draw > 39999 && parts_size_draw < 50000  //if 4
+    {
+    draw_sprite(gen_4,0,view_xview+257,view_yview+10);
+    parts_size_draw-=40000;
+    };
+if parts_size_draw > 29999 && parts_size_draw < 40000  //if 3
+    {
+    draw_sprite(gen_3,0,view_xview+257,view_yview+10);
+    parts_size_draw-=30000;
+    };
+if parts_size_draw > 19999 && parts_size_draw < 30000  //if 2
+    {
+    draw_sprite(gen_2,0,view_xview+257,view_yview+10);
+    parts_size_draw-=20000;
+    };
+if parts_size_draw > 9999 && parts_size_draw < 20000  //if 1
+    {
+    draw_sprite(gen_1,0,view_xview+257,view_yview+10);
+    parts_size_draw-=10000;
+    };
+////////////////////////////////////////////////////////////////////////end 5th digit
+    
+//if there's 4th digit
+if parts_size_draw < 1000 //if 0
+    {
+   draw_sprite(gen_0,0,view_xview+263,view_yview+10);
+    };
+        if !(parts_size_draw < 1000)
+    {
+if parts_size_draw > 8999                           ///if 9
+    {
+    draw_sprite(gen_9,0,view_xview+263,view_yview+10);
+    parts_size_draw-=9000;
+    };
+if parts_size_draw > 7999 && parts_size_draw < 9000  //if 8
+    {
+    draw_sprite(gen_8,0,view_xview+263,view_yview+10);
+    parts_size_draw-=8000;
+    };
+if parts_size_draw > 6999 && parts_size_draw < 8000  //if 7
+    {
+    draw_sprite(gen_7,0,view_xview+263,view_yview+10);
+    parts_size_draw-=7000;
+    };
+if parts_size_draw > 5999 && parts_size_draw < 7000  //if 6
+    {
+    draw_sprite(gen_6,0,view_xview+263,view_yview+10);
+    parts_size_draw-=6000;
+    };
+if parts_size_draw > 4999 && parts_size_draw < 6000  //if 5
+    {
+    draw_sprite(gen_5,0,view_xview+263,view_yview+10);
+    parts_size_draw-=5000;
+    };
+if parts_size_draw > 3999 && parts_size_draw < 5000  //if 4
+    {
+    draw_sprite(gen_4,0,view_xview+263,view_yview+10);
+    parts_size_draw-=4000;
+    };
+if parts_size_draw > 2999 && parts_size_draw < 4000  //if 3
+    {
+    draw_sprite(gen_3,0,view_xview+263,view_yview+10);
+    parts_size_draw-=3000;
+    };
+if parts_size_draw > 1999 && parts_size_draw < 3000  //if 2
+    {
+    draw_sprite(gen_2,0,view_xview+263,view_yview+10);
+    parts_size_draw-=2000;
+    };
+if parts_size_draw > 999 && parts_size_draw < 2000  //if 1
+    {
+    draw_sprite(gen_1,0,view_xview+263,view_yview+10);
+    parts_size_draw-=1000;
+    };
+}
+    
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^END 4th digit
+//if there's a third digit
+if parts_size_draw < 100 //if 0
+    {
+   draw_sprite(gen_0,0,view_xview+269,view_yview+10);
+    };
+        if !(parts_size_draw < 100)
+    {
+if parts_size_draw > 899                           ///if 9
+    {
+    draw_sprite(gen_9,0,view_xview+269,view_yview+10);
+    parts_size_draw-=900;
+    };
+if parts_size_draw > 799 && parts_size_draw < 900  //if 8
+    {
+    draw_sprite(gen_8,0,view_xview+269,view_yview+10);
+    parts_size_draw-=800;
+    };
+if parts_size_draw > 699 && parts_size_draw < 800  //if 7
+    {
+    draw_sprite(gen_7,0,view_xview+269,view_yview+10);
+    parts_size_draw-=700;
+    };
+if parts_size_draw > 599 && parts_size_draw < 700  //if 6
+    {
+    draw_sprite(gen_6,0,view_xview+269,view_yview+10);
+    parts_size_draw-=600;
+    };
+if parts_size_draw > 499 && parts_size_draw < 600  //if 5
+    {
+    draw_sprite(gen_5,0,view_xview+269,view_yview+10);
+    parts_size_draw-=500;
+    };
+if parts_size_draw > 399 && parts_size_draw < 500  //if 4
+    {
+    draw_sprite(gen_4,0,view_xview+269,view_yview+10);
+    parts_size_draw-=400;
+    };
+if parts_size_draw > 299 && parts_size_draw < 400  //if 3
+    {
+    draw_sprite(gen_3,0,view_xview+269,view_yview+10);
+    parts_size_draw-=300;
+    };
+if parts_size_draw > 199 && parts_size_draw < 300  //if 2
+    {
+    draw_sprite(gen_2,0,view_xview+269,view_yview+10);
+    parts_size_draw-=200;
+    };
+if parts_size_draw > 99 && parts_size_draw < 200  //if 1
+    {
+    draw_sprite(gen_1,0,view_xview+269,view_yview+10);
+    parts_size_draw-=100;
+    };
+}
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^END 3rd digit
+
+if parts_size_draw < 10 //if 0
+    {
+   draw_sprite(gen_0,0,view_xview+275,view_yview+10);
+    };
+        if !(parts_size_draw < 10)
+    {
+//if there's a second digit
+if parts_size_draw > 89 && parts_size_draw < 100  //if 9
+    {
+    draw_sprite(gen_9,0,view_xview+275,view_yview+10);
+    parts_size_draw-=90;
+    };
+if parts_size_draw > 79 && parts_size_draw < 90  //if 8
+    {
+    draw_sprite(gen_8,0,view_xview+275,view_yview+10);
+    parts_size_draw-=80;
+    };
+if parts_size_draw > 69 && parts_size_draw < 80  //if 7
+    {
+    draw_sprite(gen_7,0,view_xview+275,view_yview+10);
+    parts_size_draw-=70;
+    };
+if parts_size_draw > 59 && parts_size_draw < 70  //if 6
+    {
+    draw_sprite(gen_6,0,view_xview+275,view_yview+10);
+    parts_size_draw-=60;
+    };
+if parts_size_draw > 49 && parts_size_draw < 60  //if 5
+    {
+    draw_sprite(gen_5,0,view_xview+275,view_yview+10);
+    parts_size_draw-=50;
+    };
+if parts_size_draw > 39 && parts_size_draw < 50  //if 4
+    {
+    draw_sprite(gen_4,0,view_xview+275,view_yview+10);
+    parts_size_draw-=40;
+    };
+if parts_size_draw > 29 && parts_size_draw < 40  //if 3
+    {
+    draw_sprite(gen_3,0,view_xview+275,view_yview+10);
+    parts_size_draw-=30;
+    };
+if parts_size_draw > 19 && parts_size_draw < 30  //if 2
+    {
+    draw_sprite(gen_2,0,view_xview+275,view_yview+10);
+    parts_size_draw-=20;
+    };
+if parts_size_draw > 9 && parts_size_draw < 20  //if 1
+    {
+    draw_sprite(gen_1,0,view_xview+275,view_yview+10);
+    parts_size_draw-=10;
+    };
+}
+
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^END 2nd digit
+//if there's 1 digit only
+
+if parts_size_draw = 9
+    {
+    draw_sprite(gen_9,0,view_xview+281,view_yview+10);
+    };
+if parts_size_draw = 8
+    {
+    draw_sprite(gen_8,0,view_xview+281,view_yview+10);
+    };
+if parts_size_draw = 7
+    {
+    draw_sprite(gen_7,0,view_xview+281,view_yview+10);
+    };
+if parts_size_draw = 6
+    {
+    draw_sprite(gen_6,0,view_xview+281,view_yview+10);
+    };
+if parts_size_draw = 5
+    {
+    draw_sprite(gen_5,0,view_xview+281,view_yview+10);
+    };
+if parts_size_draw = 4
+    {
+    draw_sprite(gen_4,0,view_xview+281,view_yview+10);
+    };
+if parts_size_draw = 3
+    {
+    draw_sprite(gen_3,0,view_xview+281,view_yview+10);
+    };
+if parts_size_draw = 2
+    {
+    draw_sprite(gen_2,0,view_xview+281,view_yview+10);
+    };
+if parts_size_draw = 1
+    {
+    draw_sprite(gen_1,0,view_xview+281,view_yview+10);
+    };
+if parts_size_draw = 0
+    {
+    draw_sprite(gen_0,0,view_xview+281,view_yview+10);
+    };
+////
+
